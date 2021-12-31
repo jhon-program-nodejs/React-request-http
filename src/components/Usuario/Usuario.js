@@ -14,5 +14,4 @@ function Usuario(props) {
     </div>
   )
 }
-
 export default Usuario
