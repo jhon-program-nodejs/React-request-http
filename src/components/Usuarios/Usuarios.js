@@ -31,7 +31,6 @@ class Usuarios extends Component {
    fetch('https://reqres.in/api/users')
     .then(resposta => resposta.json())
       .then(({data}) => {
-        console.log(data)
         const usuarios = data.map(usuarios =>{
           return{
             id: usuarios.id,
@@ -40,7 +39,6 @@ class Usuarios extends Component {
             email:usuarios.email
           }
         })
-        console.log(usuarios)
         this.setState({usuarios})
       })
    
